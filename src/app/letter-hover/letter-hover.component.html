@@ -1,0 +1,12 @@
+<header class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span *ngFor="let letter of titleLetters" class="letter" [innerHTML]="letter"></span>
+    </h1>
+    <p class="hero-subtitle">
+      <span *ngFor="let letter of subtitleLetters" class="letter" [innerHTML]="letter"></span>
+    </p>
+    <a href="#projects" id="projects" class="btn btn-primary mt-3">View My Work</a>
+  </div>
+</header>
