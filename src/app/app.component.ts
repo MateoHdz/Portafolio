@@ -4,7 +4,7 @@ import { LetterHoverComponent } from './letter-hover/letter-hover.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LetterHoverComponent],
+  imports: [LetterHoverComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
