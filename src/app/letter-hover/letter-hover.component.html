@@ -2,10 +2,10 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">
-      <span *ngFor="let letter of titleLetters" class="letter" [innerHTML]="letter"></span>
+      <span *ngFor="let letter of titleLetters; let i = index" class="letter" [innerHTML]="letter" [ngStyle]="{'animation-delay': (i * 0.1) + 's'}"></span>
     </h1>
     <p class="hero-subtitle">
-      <span *ngFor="let letter of subtitleLetters" class="letter" [innerHTML]="letter"></span>
+      <span *ngFor="let letter of subtitleLetters; let i = index" class="letter" [innerHTML]="letter" [ngStyle]="{'animation-delay': (i * 0.05) + 's'}"></span>
     </p>
     <a href="#projects" id="projects" class="btn btn-primary mt-3">View My Work</a>
   </div>

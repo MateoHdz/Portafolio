@@ -1,12 +1,29 @@
 .letter {
   display: inline-block;
   transition: color 0.3s, transform 0.3s;
+  animation: letterAnimation 0.5s ease-in-out;
+}
+
+@keyframes letterAnimation {
+  0% {
+    color: inherit;
+    transform: translateY(0);
+  }
+  50% {
+    color: #ff7b00;
+    transform: translateY(-10px);
+  }
+  100% {
+    color: inherit;
+    transform: translateY(0);
+  }
 }
 
 .letter:hover {
   color: #ff7b00;
   transform: translateY(-5px);
 }
+
 .hero-section {
   background: url('https://i.postimg.cc/3w9NdMjJ/IMG-20220828-WA0047.jpg') no-repeat center center/cover;
   height: 80vh;
@@ -16,6 +33,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -24,25 +42,28 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .hero-content {
   z-index: 1;
   color: white;
 }
+
 .hero-title {
   font-size: 3rem;
   font-weight: 600;
 }
+
 .hero-subtitle {
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
 
-
-#projects{
+#projects {
   background-color: transparent;
   border-color: #ff7b00;
 }
-#projects:hover{
+
+#projects:hover {
   color: #ff7b00;
   transform: translateY(-5px);
 }

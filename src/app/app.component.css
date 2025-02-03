@@ -13,10 +13,18 @@ header {
   padding: 2rem 0;
   text-align: center;
 }
+.section-title{
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(226, 226, 226);
+}
 
 /* Aquí editaremos todas las clases */
 .navbar {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .navbar-brand {
   font-weight: bold;
@@ -27,55 +35,13 @@ header {
 }
 .nav-link{
   color: #ffffff;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave */
 }
 .nav-link:hover {
   color: #ff7b00;
+  text-shadow: 0 0 10px #ff7b00, 0 0 20px #ff7b00;
 }
-.hero-section {
-  background: url('https://i.postimg.cc/3w9NdMjJ/IMG-20220828-WA0047.jpg') no-repeat center center/cover;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-.hero-content {
-  z-index: 1;
-  color: white;
-}
-.hero-title {
-  font-size: 3rem;
-  font-weight: 600;
-}
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 3rem 0 2rem;
-  color: #4b4780;
-}
-.card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(243, 129, 35, 0.1);
-  transition: all 0.3s;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
+
 footer {
   color: rgb(238, 90, 21);
   padding: 2rem;
@@ -92,3 +58,223 @@ footer {
 }
 
 
+/* Sobre mí */
+.about {
+  padding: 50px 0;
+}
+
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 60%;
+  color:rgb(103, 107, 167);
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-image {
+  width: 35%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.strong-abautme {
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  color: #ff7b00;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.strong-abautme:hover {
+  transform: translateY(-5px);
+  color: #ff5500;
+}
+
+
+/* Estilos base */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f8f6f6;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+/* Estilos para los contenedores de habilidades */
+.skill-cont {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(250, 249, 249, 0.1);
+  color:wheat ;
+}
+
+.skill-cont:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgb(52, 105, 252);
+}
+
+.skills-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-cont:hover .skills-logo {
+  transform: scale(1.2);
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-cont {
+  animation: fadeIn 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Retraso en la animación para cada elemento */
+.skill-cont:nth-child(1) { animation-delay: 0.1s; }
+.skill-cont:nth-child(2) { animation-delay: 0.2s; }
+.skill-cont:nth-child(3) { animation-delay: 0.3s; }
+.skill-cont:nth-child(4) { animation-delay: 0.4s; }
+.skill-cont:nth-child(5) { animation-delay: 0.5s; }
+.skill-cont:nth-child(6) { animation-delay: 0.6s; }
+.skill-cont:nth-child(7) { animation-delay: 0.7s; }
+.skill-cont:nth-child(8) { animation-delay: 0.8s; }
+.skill-cont:nth-child(9) { animation-delay: 0.9s; }
+.skill-cont:nth-child(10) { animation-delay: 1s; }
+.skill-cont:nth-child(11) { animation-delay: 1.1s; }
+.skill-cont:nth-child(12) { animation-delay: 1.2s; }
+
+/* my projects */
+/* Estilos para las tarjetas */
+#projects .card {
+  margin: 0 auto; /* Centrar las tarjetas */
+  max-width: 400px; /* Ancho máximo de las tarjetas */
+}
+.custom-card {
+  border: 2px solid rgb(52, 105, 252); /* Borde sólido */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Para que el borde redondeado se aplique a la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  background-color: #181c58; /* Fondo blanco */
+}
+
+.custom-card:hover {
+  transform: translateY(-5px); /* Efecto de levitación */
+  box-shadow: 0 10px 10px rgb(52, 105, 252); /* Sombra más pronunciada */
+}
+
+
+
+.custom-card .card-body {
+  padding: 20px;
+}
+
+.custom-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fffafa; /* Color del título */
+}
+
+.custom-card .card-text {
+  font-size: 1rem;
+  color: #ffffff; /* Color del texto */
+}
+
+.custom-card .btn-outline-primary {
+  border: 2px solid #007bff; /* Borde del botón */
+  color: #007bff; /* Color del texto del botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.custom-card .btn-outline-primary:hover {
+  background-color: #007bff; /* Fondo del botón al hacer hover */
+  color: #fff; /* Color del texto al hacer hover */
+}
+
+.lead{
+  color: rgb(103, 107, 167)
+}
+
+
+ /* Contactame */
+
+ /* Estilos para la sección de contacto */
+#contact {
+  background-color: #1a1a1a; /* Fondo oscuro */
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff; /* Texto blanco */
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #cccccc; /* Texto gris claro */
+}
+
+/* Estilos para los botones de contacto */
+.btn-contact {
+  margin: 10px;
+  border: 2px solid #444; /* Borde gris */
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff; /* Texto blanco */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #333; /* Fondo más claro al hacer hover */
+  transform: translateY(-5px); /* Efecto de levitación */
+  border-color: #666; /* Borde más claro al hacer hover */
+}
+
+/* Estilos para los iconos */
+.btn-contact i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}

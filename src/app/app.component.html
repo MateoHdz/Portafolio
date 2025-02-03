@@ -45,63 +45,196 @@
   <div class="container" id="container-body">
 
     <app-letter-hover></app-letter-hover>
-
-    <section id="about" class="container py-5">
-      <h2 class="section-title">About Me</h2>
-      <p class="text-center">I'm a software developer with a passion for creating elegant and efficient solutions to complex problems. With a background in development and an eye for design, I build intuitive applications that deliver meaningful user experiences.</p>
+<!-- sobre mi -->
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me.</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="text-box">
+              My name is Mateo Hernández, a <strong class="strong-abautme">Software Developer</strong> with a degree in <strong class="strong-abautme">Information Systems Analysis and Development</strong> and over a year of experience in software development. Passionate about creating <strong class="strong-abautme">elegant</strong> and <strong class="strong-abautme">efficient solutions</strong> to complex problems, I combine my technical expertise with a keen eye for design to build <strong class="strong-abautme">intuitive applications</strong> that deliver meaningful and <strong class="strong-abautme">user-centric</strong> experiences.
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://i.postimg.cc/DzwtWcMT/IMG-2483.avif" alt="Foto de Mateo Hernández">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="container py-5">
+<!-- skills -->
+    <div class="container">
       <h2 class="section-title">Skills</h2>
-      <div class="row row-cols-2 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card p-3">
-            <h5>JavaScript</h5>
+
+      <div class="row skill-cont">
+          <!-- Backend Skills -->
+          <div class="col">         <div class="skill-cont">
+                  <img class="skills-logo" src="skills/java.png" alt="Java">
+                  Java
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/python.png" alt="Python">
+                  Python
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/node.png" alt="Node.js">
+                  Node.js
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/sql.png" alt="MySQL">
+                  MySQL
+              </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card p-3">
-            <h5>Angular</h5>
+
+          <!-- Frontend Skills -->
+          <div class="col">          <div class="skill-cont">
+                  <img class="skills-logo" src="skills/html.png" alt="HTML">
+                  HTML
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/css.png" alt="CSS">
+                  CSS
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/js.png" alt="JavaScript">
+                  JavaScript
+              </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card p-3">
-            <h5>Bootstrap</h5>
+
+          <!-- Frameworks -->
+          <div class="col">            <div class="skill-cont">
+                  <img class="skills-logo" src="skills/spring.png" alt="Spring Boot">
+                  Spring Boot
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/angular.png" alt="Angular">
+                  Angular
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/bootstrap.png" alt="Bootstrap">
+                  Bootstrap
+              </div>
           </div>
+
+          <!-- Collaborative Tools -->
+          <div class="col">
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/github.png" alt="GitHub">
+                  GitHub
+              </div>
+              <div class="skill-cont">
+                  <img class="skills-logo" src="skills/scrum.png" alt="Scrum">
+                  Scrum
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- projects -->
+    <section id="projects" class="container py-5">
+      <div class="row">
+        <!-- Columna izquierda: Título y descripción -->
+        <div class="col-md-6">
+          <h2 class="section-title">My Projects</h2>
+          <p class="lead">
+            Aquí puedes escribir un párrafo corto sobre tu experiencia con proyectos.
+            Por ejemplo: "He trabajado en diversos proyectos de desarrollo web, desde aplicaciones
+            responsivas hasta plataformas de comercio electrónico con integraciones personalizadas."
+          </p>
         </div>
-        <div class="col">
-          <div class="card p-3">
-            <h5>Node.js</h5>
+
+        <!-- Columna derecha: Carrusel de tarjetas -->
+        <div class="col-md-6">
+          <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Tarjeta 1 -->
+              <div class="carousel-item active">
+                <div class="card custom-card">
+                  <img src="https://i.postimg.cc/DzwtWcMT/IMG-2483.avif" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project One</h5>
+                    <p class="card-text">A responsive web application for real-time analytics.</p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjeta 2 -->
+              <div class="carousel-item">
+                <div class="card custom-card">
+                  <img src="https://i.postimg.cc/DzwtWcMT/IMG-2483.avif" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Project Two</h5>
+                    <p class="card-text">An e-commerce platform with custom integrations.</p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjeta 3 -->
+              <div class="carousel-item">
+                <div class="card custom-card">
+                  <img src="https://i.postimg.cc/DzwtWcMT/IMG-2483.avif" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Project Three</h5>
+                    <p class="card-text">A mobile app for task management and productivity.</p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="container py-5">
-      <h2 class="section-title">Projects</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project One</h5>
-              <p class="card-text">A responsive web application for real-time analytics.</p>
-              <a href="#" class="btn btn-outline-primary">View Project</a>
-            </div>
-          </div>
+    <!-- Contactame -->
+    <section id="contact" class="container py-5 text-white">
+      <h2 class="section-title text-center mb-4">Contact Me</h2>
+      <p class="text-center lead mb-5">
+        Si deseas contactarme, puedes encontrarme en mis redes sociales o enviarme un mensaje directo.
+      </p>
+
+      <div class="row justify-content-center">
+        <!-- WhatsApp -->
+        <div class="col-auto">
+          <a href="https://wa.me/573215272808" target="_blank" class="btn btn-dark btn-lg btn-contact">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Project Two</h5>
-              <p class="card-text">An e-commerce platform with custom integrations.</p>
-              <a href="#" class="btn btn-outline-primary">View Project</a>
-            </div>
-          </div>
+
+        <!-- Instagram -->
+        <div class="col-auto">
+          <a href="https://www.instagram.com/mateo_hernandez.03/" target="_blank" class="btn btn-dark btn-lg btn-contact">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="col-auto">
+          <a href="https://www.linkedin.com/in/mateo-hernandez-209384280/" target="_blank" class="btn btn-dark btn-lg btn-contact">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="col-auto">
+          <a href="https://github.com/MateoHdz" target="_blank" class="btn btn-dark btn-lg btn-contact">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
     </section>
+
   </div>
   <footer>
     <p>&copy; 2025 Mateo Hernández. All rights reserved.</p>
